@@ -1,0 +1,32 @@
+{
+  "name": "cluely-assistant",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "vite build && electron-builder"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "concurrently": "^10.0.7",
+    "electron": "^30.0.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  },
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.10.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "axios": "^1.21.1",
+    "electron-store": "^10.0.0",
+    "jotai": "^3.0.2",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-hot-toast": "^2.6.1",
+    "recharts": "^3.10.1",
+    "socket.io-client": "^4.8.4",
+    "tsconfig-paths": "^4.2.0"
+  }
+}

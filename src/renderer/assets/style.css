@@ -1,0 +1,286 @@
+/* Cluely AI Meeting Assistant - Core Styles */
+
+/* Overlay window styles */
+.cluely-overlay {
+  position: fixed;
+  z-index: 999999;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+/* Overlay header */
+.cluely-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #3a3a5a;
+}
+
+.cluely-header span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cluely-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.cluely-close:hover {
+  color: #fff;
+}
+
+/* Status area */
+.cluely-status {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Suggestions list */
+.cluely-suggestions {
+  margin: 16px 0;
+}
+
+.cluely-suggestion {
+  background-color: #16213e;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cluely-suggestion:hover {
+  background-color: #1e2d51;
+}
+
+/* Action buttons */
+.cluely-action {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #3a3a5a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cluely-action button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cluely-action button:hover {
+  background-color: #357abd;
+}
+
+/* Settings panel */
+.cluely-settings {
+  position: fixed;
+  z-index: 999998;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 24px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cluely-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #3a3a5a;
+}
+
+.cluely-settings h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.cluely-settings-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cluely-settings-section {
+  margin-bottom: 20px;
+}
+
+.cluely-settings-section h3 {
+  color: #4a90e2;
+  margin-top: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #3a3a5a;
+}
+
+.cluely-settings-section label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.cluely-settings-section input {
+  width: 100%;
+  padding: 8px;
+  background-color: #2a2a4a;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  color: #e0e0e0;
+  margin-top: 4px;
+}
+
+.cluely-settings-section select {
+  width: 100%;
+  padding: 8px;
+  background-color: #2a2a4a;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+.cluely-settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.cluely-settings-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: #505050;
+  color: #e0e0e0;
+}
+
+/* Notes panel */
+.cluely-notes {
+  position: fixed;
+  z-index: 999997;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 24px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cluely-notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #3a3a5a;
+}
+
+.cluely-notes h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.cluely-notes-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cluely-highlights,
+.cluely-action-items {
+  margin: 16px 0;
+}
+
+.cluely-highlights h3,
+.cluely-action-items h3 {
+  color: #4a90e2;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.cluely-highlights ul,
+.cluely-action-items ul {
+  padding-left: 20px;
+}
+
+.cluely-highlights li,
+.cluely-action-items li {
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.cluely-full-transcript {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #3a3a5a;
+}
+
+.cluely-full-transcript h3 {
+  color: #4a90e2;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.cluely-full-transcript pre {
+  background-color: #0d0d17;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
+/* General button styles */
+button {
+  appearance: none;
+  -webkit-appearance: none;
+}
